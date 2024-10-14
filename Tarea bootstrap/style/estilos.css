@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(25deg, #109781, #78af9a, #bbc6b5, #fbdcd0);   
+    font-family: monospace;
+}
+h3{
+    text-align: center;
+}
+.padre{
+    padding: 5px;
+    background-image: linear-gradient(25deg, #109781, #78af9a, #bbc6b5, #fbdcd0);   
+    font-family: monospace;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "cont1 cont1 cont2"
+                         "cont3 cont3 cont3"
+                         "footer footer footer";
+}
+.padre .header{
+    grid-area: header;
+}
+.padre .nav{
+    grid-area: nav;
+    background-color:#fbdcd0 ;
+       
+}
+.padre .cont1{
+    grid-area: cont1;
+    background-color: lavender;
+}
+.padre .cont2{
+    grid-area: cont2;
+    background-color: lavender;
+}
+
+.padre .cont3 {
+    grid-area: cont3;
+    background-color: lavender;
+    display: flex;    
+    flex-wrap: wrap;  
+    gap: 20px;        
+    justify-content: flex-start; 
+}
+
+.card {
+    flex:0 310px;             /* Evita que las cards se estiren */
+} 
+
+.padre .footer{
+    grid-area: footer;
+    background-color: #78af9a;
+    text-align: center;
+}
+/*@media screen(wi) {
+    
+}*/
